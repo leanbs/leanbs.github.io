@@ -1,0 +1,224 @@
+/* font */
+h1 {
+	font-family: "Open Sans";
+	font-size: 18.72px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: normal;
+}
+h3 {
+	font-family: "Open Sans";
+	font-size: 13.28px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: normal;
+}
+p {
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+blockquote {
+	font-family: "Open Sans";
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+pre {
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+/* cake */
+#cake {
+	display: block;
+	position: relative;
+	margin: -56em auto 0 auto;
+}
+
+/* ============================================== Candle
+*/
+
+.velas {
+	background: #ffffff;
+	border-radius: 10px;
+	position: absolute;
+	top: 219px;
+	left: 50%;
+	margin-left: -2.4px;
+	margin-top: -8.33333333px;
+	width: 5px;
+	height: 35px;
+	transform: translateY(-300px);
+	backface-visibility: hidden;
+	animation: in 500ms 6s ease-out forwards;
+}
+.velas:after,
+.velas:before {
+	background: rgba(255, 0, 0, 0.4);
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2.22222222px;
+}
+.velas:after {
+	top: 25%;
+	left: 0;
+}
+.velas:before {
+	top: 45%;
+	left: 0;
+}
+
+/* ============================================== Fire
+*/
+
+.fuego {
+	border-radius: 100%;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -2.6px;
+	width: 6.66666667px;
+	height: 18px;
+}
+.fuego:nth-child(1) {
+	animation: fuego 2s 6.5s infinite;
+}
+.fuego:nth-child(2) {
+	animation: fuego 1.5s 6.5s infinite;
+}
+.fuego:nth-child(3) {
+	animation: fuego 1s 6.5s infinite;
+}
+.fuego:nth-child(4) {
+	animation: fuego 0.5s 6.5s infinite;
+}
+.fuego:nth-child(5) {
+	animation: fuego 0.2s 6.5s infinite;
+}
+
+/* ============================================== Animation Fire
+*/
+
+@keyframes fuego {
+	0%, 100% {
+		background: rgba(254, 248, 97, 0.5);
+		box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+		transform: translateY(0) scale(1);
+	}
+	50% {
+		background: rgba(255, 50, 0, 0.1);
+		box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+		transform: translateY(-20px) scale(0);
+	}
+}
+
+@keyframes in {
+	to {
+		transform: translateY(0);
+	}
+}
+
+/* general style */
+#canvas{
+	position: absolute;
+	top: -300px;
+	left: 0px;
+}
+.inline-block {
+	display: inline-block;
+}
+.mr-30 {
+	margin-right: 30px;
+}
+body {
+	overflow: hidden;
+	background: #EDEDED;
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+.bday__container {
+	z-index: 1;
+}
+.bday__container--outer {
+	padding: 20px;
+	background-color: green;
+	height: 95vh;
+	background: linear-gradient(125deg, #FFC0CB, #FFDAB9);
+}
+.bday__container--inner {
+	border: 1px solid #E0E0E0;
+	height: 100%;
+	padding: 0px 300px;
+}
+.bday__container--title {
+	display: inline-block;
+	text-align: center;
+	margin-top: 330px;
+	width: 100%;
+}
+.bday__text--title {
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 20px;
+}
+.bday__text--alias {
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.3);
+	font-style: italic;
+}
+.bday__container--message {
+	text-align: center;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 0.7);
+}
+.bday__container--message-bday {
+	text-align: center;
+	line-height: 22px;
+	color: rgba(0, 0, 0, 0.54);
+}
+.vania__btn--ig {
+	border: 1px solid #E95950;
+	background-color: #E95950;
+	color: #FFFFFF;
+	border-radius: 16px;
+	box-sizing: border-box;
+	font-size: 13px;
+	padding: 2px 8px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.vania__btn--fb {
+	border: 1px solid #3B5998;
+	background-color: #3B5998;
+	color: #FFFFFF;
+	border-radius: 16px;
+	box-sizing: border-box;
+	font-size: 13px;
+	padding: 2px 8px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.vania__btn--tw {
+	border: 1px solid #55ACEE;
+	background-color: #55ACEE;
+	color: #FFFFFF;
+	border-radius: 16px;
+	box-sizing: border-box;
+	font-size: 13px;
+	padding: 2px 8px;
+	text-decoration: none;
+	cursor: pointer;
+}
