@@ -134,7 +134,7 @@ pre {
 /* general style */
 #canvas{
 	position: absolute;
-	top: -300px;
+	top: -270px;
 	left: 0px;
 }
 .inline-block {
@@ -152,6 +152,8 @@ body {
 }
 .bday__container {
 	z-index: 1;
+	width: 512px;
+	margin: auto;
 }
 .bday__container--outer {
 	padding: 20px;
@@ -160,7 +162,7 @@ body {
 	background: linear-gradient(125deg, #FFC0CB, #FFDAB9);
 }
 .bday__container--inner {
-	border: 1px solid #E0E0E0;
+	border: 1px solid #FFFDB9;
 	height: 100%;
 	padding: 0px 300px;
 }
